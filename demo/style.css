@@ -1,14 +1,22 @@
-.mq-container{
+#gyro {
+  height: 100px;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.mq-container {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  max-width: 100%;
   width: 500px;
   height: 100px;
   background-color: yellow;
   overflow: hidden;
 }
 
-.mq-title-wrap{
+.mq-title-wrap {
   padding: 0;
   margin: 0;
   position: absolute;
@@ -16,7 +24,7 @@
   white-space: nowrap;
 }
 
-.mq-title{
+.mq-title {
   display: inline-block;
   font-size: 60px;
   margin: 0;
