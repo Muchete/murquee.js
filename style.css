@@ -1,0 +1,26 @@
+.mq-container{
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 500px;
+  height: 100px;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.mq-title-wrap{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+.mq-title{
+  display: inline-block;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  letter-spacing: 0;
+}
