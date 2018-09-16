@@ -75,8 +75,8 @@ if ('DeviceOrientationEvent' in window) {
 
 function deviceOrientationHandler(eventData) {
   var tiltLR = eventData.gamma;
-  // var tiltFB = eventData.beta;
-  // var dir = eventData.alpha;
+  var tiltFB = eventData.beta;
+  var dir = eventData.alpha;
 
   document.getElementById("gyro").innerHTML = Math.round(tiltLR);
   var val = map_range(tiltLR, -90, 90, -1, 1);
@@ -84,8 +84,8 @@ function deviceOrientationHandler(eventData) {
   // document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
   // document.getElementById("doDirection").innerHTML = Math.round(dir);
 
-  // var logo = document.getElementById("imgLogo");
-  // logo.style.webkitTransform = "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB * -1) + "deg)";
-  // logo.style.MozTransform = "rotate(" + tiltLR + "deg)";
-  // logo.style.transform = "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB * -1) + "deg)";
+  var logo = document.getElementById("tilt");
+  logo.style.webkitTransform = "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB * -1 +60) + "deg)";
+  logo.style.MozTransform = "rotate(" + tiltLR + "deg)";
+  logo.style.transform = "rotate(" + tiltLR + "deg) rotate3d(1,0,0, " + (tiltFB * -1 +60) + "deg)";
 }

@@ -32,3 +32,16 @@
   margin-right: 20px;
   letter-spacing: 0;
 }
+
+.img {
+    width: 100%;
+    background-size: cover;
+    background-image: url("Poster_mockup_Datavis.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.img::after{
+    padding-top: 66.666%;
+    display: block;
+    content: '';
+}
