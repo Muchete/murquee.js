@@ -34,14 +34,15 @@
 }
 
 .img {
-    width: 100%;
-    background-size: cover;
-    background-image: url("Poster_mockup_Datavis.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-image: url("Poster_mockup_Datavis.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.img::after{
-    padding-top: 66.666%;
-    display: block;
-    content: '';
+
+.img::after {
+  padding-top: 66.666%;
+  display: block;
+  content: '';
 }
